@@ -1,0 +1,231 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color:#777777;
+   
+}
+/**Styles related to header which contains the name logo and the menu items**/
+header{
+    position:relative;
+    background-color:#ffffff;
+    border:2px solid #cccccc;
+    overflow:auto;
+    margin-bottom:0;
+    height:60px;
+    z-index:1;
+   
+}
+h2,h3{
+    color:#4aaaa5;
+    font-family:"Georgia", Times, "Time New Roman", serif;
+    padding:10px 5px 5px 20px;
+    font-size:20px;
+}
+hr{
+    height:3px;
+    color:#dddddd;
+    background-color:#dddddd;
+    border:none;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:15px;
+}
+a{
+    text-decoration:none;
+    color:#777777;
+}
+ul{
+    position:absolute;
+    right:227px;
+    float:right;
+    padding-top:3px;
+}    
+li{
+    list-style-type:none;
+    display:inline;
+    border-right: 1px solid #cccccc;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:15px;
+}
+/*Last child which is the 'Contact' won't have a right border*/
+li:last-child{
+    border-right:none;
+}
+/*Styles related to Main Content*/
+section{
+    position:absolute;
+    top:130px;
+    bottom:45px;
+    left:240px;
+    clear:both;
+    width:960px;
+    height:550px;
+    background-color:#ffffff;
+    border:1px solid #dddddd;
+    overflow:auto;
+}
+p{   
+    padding-left:20px;
+    padding-right:20px;
+    line-height:2em;
+}
+/*First paragraph floats around the image*/
+#paragraph_1{
+    float:left;
+    width:75%;
+}
+/*Next paragraph does not float from what's seen in  the example screen shot*/
+#paragraph_2{
+    clear:both;
+}
+/*Footer is fixed, not moving when you scroll*/
+footer{
+    position:fixed;
+    bottom:0;
+    color:#ffffff;
+    text-align:center;
+    height:50px;
+    width:100%;
+    margin:0 auto;
+    background-color:#666666;
+    border-top:8px solid #4aaaa5;
+}
+/*wrapper is the background with a fancy wall paper*/
+.wrapper{
+    position:absolute;
+    height:100%;
+    width:100%;
+    bottom:50px;
+    clear:both;
+    background-image: url("../images/beanstalk.png");
+    margin:0 auto;
+    z-index:0;  
+}
+/*Logo is the name in the header*/
+#logo{
+    position:absolute;
+    left:240px;
+    top:0;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    width:150px;
+    height:60px;
+    padding:15px 20px 10px 20px;       
+    margin:0 auto 0 auto;
+    font-size:20px;
+}
+/*styles related to image*/
+#myphoto{
+    float:left;
+    width:25%;
+    height:240px;
+    padding:20px;
+}
+/*This part contains the styles related to Contact page*/
+/*User input class selector specifies the styles which are common across the elements of the form  */
+.UserInput{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:920px;
+    height:20px;
+    font-size:15px;
+    color:#777777;
+}
+/*message is the text area. It's height is longer than the text fields and color of its
+  border is adjusted*/
+#message{
+    height:225px;
+    border:1px solid #dddddd;
+}
+/*styles related to submit button*/
+#button{
+    position:relative;
+    bottom:10px;
+    background-color:#4aaaa5;
+    width:90px;
+    height:30px;
+    color:#eeeeee;
+    font-size:15px;
+}
+/*This section is related to the styles at the portfolio page
+  placeholder is the container that contains image and its header. It's common across same type of containers*/
+.placeholder{
+    position:relative;
+    width:200px;
+    height:116px;
+    margin-left:20px;
+    margin-bottom:20px;
+    margin-top:20px;
+   
+}
+/*Image header class selector contains all the common styles across headers of the image placeholders*/
+.imageHeader{
+    position:absolute;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    width:100%;
+    text-align:center;
+    height:25%;
+    padding-top:5px;
+    
+}
+/*When it comes to positioning all the image headers have different position values. But they'll rest at the bottom relative to images and There's a 5 or 4 px gap on the bottom*/
+#img1Header{
+    position:absolute;
+    bottom:5px;
+}
+#img2Header{
+    position:absolute;
+    bottom:4px;
+}
+#img3Header{
+    position:absolute;
+    bottom:5px;
+}
+#img4Header{
+    position:absolute;
+    bottom:5px;
+}
+#img5Header{
+    position:absolute;
+    bottom:5px;
+}
+/*images have the relative positioning*/
+#img2{
+    position:relative;
+    left:270px;
+    bottom:136px;
+}
+#img3{
+    position:relative;
+    top:25px;
+   
+}
+#img4{
+    position:relative;
+    bottom:260px;
+}
+#img5{
+    position:relative;
+    bottom:396px;
+    left:270px;
+}
+/*section for our portfolio page needed to be adjusted because of its larger height*/
+#portfolio{
+    top:125px;
+    bottom:70px;
+    height:530px;
+}
+/*There is one image placeholder unfortunately because of its white background fades into the section background. It needed to have border*/
+.pimage{
+    border:0.6px solid #dddddd;  
+    width:200px;
+    height:116px;
+}
